@@ -1,0 +1,101 @@
+/* Base and Reset Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Josefin Slab', serif;
+  background-color: #f0f0f0; /* Lighter background for a fresh look */
+  color: #000000; /* Pure black for text */
+}
+
+/* Headers */
+h1 {
+  margin-top: 30px;
+  color: #000000; /* Pure black for headers */
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Main Layout */
+.admin {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 250px auto;
+  grid-template-areas: "sidebar main";
+}
+
+/* Sidebar */
+.side {
+  grid-area: sidebar;
+  background-color: #dc1732; /* Light grey for sidebar */
+  padding: 20px;
+}
+
+.elements {
+  text-align: center;
+}
+
+/* Navigation and Links */
+ul {
+  list-style: none;
+  margin-top: 30px;
+}
+
+ul li {
+  padding: 20px;
+  font-size: 18px;
+  color: #000000; /* Black for menu items */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+ul li:hover {
+  background-color: #ae277d; /* Grey on hover for contrast */
+  color: #000000;
+  border-radius: 5px;
+}
+
+.ad {
+  background-color: #cccccc; /* Light grey for admin-specific highlight */
+  color: #000000;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+/* Divider Styles */
+.hrr {
+  background-color: #daa829; /* Medium grey */
+  border: none;
+  height: 2px;
+}
+
+/* Dashboard Grid */
+.dash {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  grid-template-areas:
+    "c1 c2 c3"
+    "c4 c4 c5"
+    "c6 c7 c7";
+  background-color: #ffffff; /* White background for cards */
+}
+
+/* Card Styles */
+.card {
+  background-color: #72b5d8; /* Very light grey for cards */
+  color: #000000; /* Black text for readability */
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
